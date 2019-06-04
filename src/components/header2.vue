@@ -1,15 +1,8 @@
   <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="../assets/logo.svg" alt="VCG" width="200">
+  <header class="border-b border-gray-300">
+      <a href="/">
+        <img class='m-12' src="../assets/logo.svg" alt="VCG" width="200">
       </a>
-    </div>
-  </nav>
+  </header>
 </template>
 
-<script>
-  export default {
-
-  }
-</script>

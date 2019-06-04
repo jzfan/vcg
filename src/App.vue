@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="text-black">
     <router-view/>
       <footer-cmp></footer-cmp>
   </div>
@@ -13,4 +13,10 @@ export default {
   }
 }
 </script>
+
+<style>
+@import "../node_modules/tailwindcss/base.css";
+@import "../node_modules/tailwindcss/components.css";
+@import "../node_modules/tailwindcss/utilities.css";
+</style>
 
