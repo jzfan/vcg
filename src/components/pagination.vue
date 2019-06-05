@@ -1,23 +1,59 @@
 <template>
     <nav class="flex my-16" id='page-nav'>
       <span class='flex-grow ml-2'>共 123 页</span>
-      <a class="px-2 hover:text-white hover:bg-red rounded" href='/'>首页</a>
-      <a class="px-2 hover:text-white hover:bg-red rounded" href='#'>上一页</a>
+      <a href='/'>首页</a>
+      <a href='#'>上一页</a>
       <ul class="flex">
-        <li><a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1">1</a></li>
-        <li><a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1  text-white bg-red rounded">2</a></li>
-        <li><a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1">3</a></li>
-        <li><a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1">4</a></li>
-        <li><span href='#' class="px-2 pb-1">&hellip;</span></li>
-        <li><a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1">46</a></li>
-        <li><a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1">47</a></li>
+        <li><a href='#'>1</a></li>
+        <li><a href='#' class="active text-white bg-red rounded">2</a></li>
+        <li><a href='#'>3</a></li>
+        <li><a href='#'>4</a></li>
+        <li><span href='#'>&hellip;</span></li>
+        <li><a href='#'>46</a></li>
+        <li><a href='#'>47</a></li>
       </ul>
-      <a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1">下一页</a>
-      <a href='#' class="hover:text-white hover:bg-red rounded px-2 pb-1">末页</a>
-      <a href='#' class="px-2 pb-1">跳转至______页</a>
-      <a href='#' class="hover:text-white hover:bg-red px-1 bg-red text-white rounded"><i class="iconfont icon-double-arrow-right"></i></a>
+      <a href='#'>下一页</a>
+      <a href='#'>末页</a>
+      <span class="px-2 pb-1 hover:text-red cursor-pointer" @click='pageInputing'>跳转至
+        <span v-if='!inputing'>______</span>
+        <span v-else>
+          <input type="text" v-model='page' class="w-10 text-center" v-focus @blur='inputing = false'>
+        </span>
+      页</span>
+      <span class="px-1 bg-red text-white rounded hover:bg-red-dark cursor-pointer"><i class="iconfont icon-double-arrow-right"></i></span>
     </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      inputing: false,
+      page: ''
+    }
+  },
+  // computed: {
+  //   pageUrl() {
+  //     let n = this.page === '' ? 1 : this.page
+  //     return `/?page=${n}`
+  //   }
+  // }
+  methods: {
+    pageInputing() {
+      this.page = ''
+      this.inputing = true
+    }
+  }
+}
+</script>
+<style>
+#page-nav a {
+  padding:0 0.5rem 0.25rem 0.5rem;
+}
+#page-nav a:hover:not(.active){
+  color: #db0300;
+}
+</style>
 
 
 

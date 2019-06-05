@@ -3,7 +3,7 @@
         <header-cmp></header-cmp>
         <div class="container mx-64 px-10 mx-auto">
             <p class="mt-12 mb-10 text-gray-500">
-                <span><i class="iconfont icon-location"></i>当前位置：</span>首页 > 视频详情
+                <span><i class="iconfont icon-location"></i>当前位置：</span><a class='hover:text-red' href="/">首页</a> > 视频详情
             </p>
             <div class="border-2 border-gray-200 p-12 mb-10 md:p-8 sm:p-0">
               <video src="movie.ogg" controls="controls" class="w-full" poster="//via.placeholder.com/1080x580">
@@ -12,7 +12,7 @@
             </div>
             <div class="flex justify-between mb-8">
               <p><i class="iconfont icon-yuan mr-2"></i><span class="tracking-wider">价 格：</span><span class="font-medium text-red text-xl">￥5000</span></p>
-              <button class="bg-red px-12 py-2 text-gray-300 tracking-wider hover:text-gray-200 rounded hover:bg-red-dark"
+              <button class="bg-red px-12 py-2 text-gray-300 tracking-wider hover:text-white rounded hover:bg-red-dark"
                 @click='openModal = !openModal'
               >点击购买</button>
             </div>
@@ -35,7 +35,7 @@
               本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有本公司所有
             </p>
         </div>
-        <phone-modal v-show='openModal' v-on:close='openModal = false'></phone-modal>
+        <phone-modal :open='openModal' v-on:close='openModal = false'></phone-modal>
     </div>
 </template>
 <script>
@@ -53,8 +53,3 @@ export default {
     }
 }
 </script>
-
-  <style>
-      /* 模态框样式 */
-
-    </style>
