@@ -3,7 +3,7 @@
         <header-cmp></header-cmp>
         <div class="container mx-64 px-10 mx-auto">
             <p class="mt-12 mb-10 text-gray-500">
-                <span><i class="iconfont icon-location"></i>当前位置：</span>首页 > 视频详情 > 收款信息
+                <span><i class="iconfont icon-location"></i>当前位置：</span><a href="/" class="hover:text-red">首页</a> > <a href="/show" class="hover:text-red">视频详情</a> > 收款信息
             </p>
             <order-cmp></order-cmp>
         </div>
