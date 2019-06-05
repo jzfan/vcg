@@ -16,11 +16,13 @@ module.exports = {
       white: '#fff',
 
       gray: {
+        100: '#f6f6fa',
         200: '#e8e8ea',
         300: '#e5e5e5',
         500: '#8f8f8f',
         600: '#7c7c7c',
         800: '#262626',
+        900: '#333',
       },
       red: {
         default: '#db0300',
@@ -47,6 +49,7 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '96': '24em'
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {

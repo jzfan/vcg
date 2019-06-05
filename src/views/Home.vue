@@ -1,7 +1,7 @@
 <template>
     <div>
         <header-cmp></header-cmp>
-        <div class="container mx-64 px-12 mx-auto">
+        <div class="container mx-64 px-10 mx-auto">
             <p class="mt-12 mb-10 font-bold ml-2">
                 视频展示
             </p>
