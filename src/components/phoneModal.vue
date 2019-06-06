@@ -35,6 +35,8 @@ export default {
     },
     methods: {
         submitInfo() {
+            document.body.style.removeProperty('overflow')
+            window.scrollTo(0,0)
             this.$router.push({ path: '/order' })
         }
     }
