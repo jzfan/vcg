@@ -388,6 +388,11 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive'],
   },
-  corePlugins: {},
+  corePlugins: {
+    resize: false,
+    outline: false,
+    userSelect: false,
+    pointerEvents: false
+  },
   plugins: [],
 }
