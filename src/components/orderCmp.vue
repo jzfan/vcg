@@ -3,7 +3,7 @@
     <span class="w-1/4 lg:w-1/12 text-gray-600 flex-none">订单信息：</span>
     <div
       class="w-2/4 lg:w-2/12 flex justify-center items-center bg-local bg-no-repeat bg-cover"
-      :style="{backgroundImage: 'url(/img/cat.png)'}"
+      :style="{backgroundImage: 'url('+ video.pic +')'}"
     >
       <a class="iconfont icon-play text-white text-4xl py-8 mr-4" href="/show"></a>
     </div>
@@ -22,5 +22,11 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      video: JSON.parse(localStorage.getItem("video"))
+    };
+  }
+};
 </script>
