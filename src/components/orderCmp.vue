@@ -5,18 +5,18 @@
       class="w-2/4 lg:w-2/12 flex justify-center items-center bg-local bg-no-repeat bg-cover"
       :style="{backgroundImage: 'url('+ video.pic +')'}"
     >
-      <a class="iconfont icon-play text-white text-4xl py-8 mr-4" href="/show"></a>
+      <a class="iconfont iconplay text-white text-4xl py-8 mr-4" href="/show"></a>
     </div>
     <div class="w-10/12 lg:w-9/12 flex-shrink flex flex-col justify-around text-gray-900 pl-4">
       <p class="mb-4">
         价 格：
-        <span class="text-red text-2xl font-medium">￥5000.00</span>
+        <span class="text-red text-2xl font-medium">￥{{ video.price }}</span>
       </p>
       <p>
         <span>
-          <i class="iconfont icon-star-normal"></i> 用途：
+          <i class="iconfont iconyongtu"></i> 用途：
         </span>
-        用途 1，用途 1，用途 1，用途 1，用途 1，用途 1，用途 1，用途 1，用途 1，用途 1，用途 1，用途 1
+        {{ video.purpose }}
       </p>
     </div>
   </div>

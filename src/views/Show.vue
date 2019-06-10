@@ -4,7 +4,7 @@
     <div class="container mx-64 px-10 mx-auto">
       <p class="mt-12 mb-10 text-gray-500">
         <span>
-          <i class="iconfont icon-location"></i>当前位置：
+          <i class="iconfont iconlocation"></i>当前位置：
         </span>
         <a class="hover:text-red" href="/">首页</a> > 视频详情
       </p>
@@ -18,9 +18,9 @@
       </div>
       <div class="flex justify-between mb-8">
         <p>
-          <i class="iconfont icon-yuan mr-2"></i>
+          <i class="iconfont iconjiage mr-2"></i>
           <span class="tracking-wider">价 格：</span>
-          <span class="font-medium text-red text-xl">￥5000</span>
+          <span class="font-medium text-red text-xl">￥{{ video.price }}</span>
         </p>
         <button
           class="bg-red px-12 py-2 text-gray-300 tracking-wider hover:text-white rounded hover:bg-red-dark"
@@ -29,16 +29,17 @@
       </div>
       <div class="flex mb-8">
         <p class="w-32 -mr-4">
-          <i class="iconfont icon-star-normal mr-2"></i>
+          <i class="iconfont iconyongtu mr-2"></i>
           <span class="tracking-wider">用 途：</span>
         </p>
-        <p class="flex-grow">用途1，用途2，用途1，用途2，用途1，用途2，用途1，用途2，用途1，用途2，用途1，用途2，用途1，用途2，用途1，用途2，用途19</p>
+        <p class="flex-grow">{{ video.purpose }}</p>
       </div>
       <p class="mb-12">
-        <i class="iconfont icon-barchart"></i>
-        <span class="tracking-wide">成交量：</span> 1022
+        <i class="iconfont iconchengjiaoliang mr-2"></i>
+        <span class="tracking-wide">成交量：</span>
+        {{ video.dealnum }}
       </p>
-      <i class="iconfont icon-dot text-red"></i>
+      <i class="iconfont icondot text-red"></i>
       <span class="font-bold">版权声明：</span>
       <p
         class="mb-12 text-gray-600"

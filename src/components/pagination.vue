@@ -53,7 +53,7 @@
           页
         </li>
         <li class="bg-red text-white hover:bg-red-dark" @click="goByInput">
-          <i class="iconfont icon-double-arrow-right"></i>
+          <i class="iconfont iconright"></i>
         </li>
       </ul>
     </nav>

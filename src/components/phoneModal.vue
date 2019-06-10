@@ -7,7 +7,7 @@
         >
           信息填写
           <span class="absolute right-0 top-0 pt-4 pr-4 cursor-pointer" @click="$emit('close')">
-            <i class="iconfont icon-close"></i>
+            <i class="iconfont iconclose"></i>
           </span>
         </p>
         <div class="px-12">

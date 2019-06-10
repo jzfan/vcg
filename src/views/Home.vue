@@ -30,8 +30,7 @@ export default {
       pageSize: 20, //每页显示20条数据
       currentPage: 1, //当前页码
       count: 0, //总记录数
-      items: [],
-      page: null
+      items: []
     };
   },
   methods: {
@@ -42,11 +41,10 @@ export default {
         this.pageSize
       }&currentPage=${this.currentPage}`;
       this.axios.get(url).then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         //子组件监听到count变化会自动更新DOM
         this.count = res.data.data.total;
         this.items = res.data.data.list;
-        this.page = res.data.data;
       });
     },
 
