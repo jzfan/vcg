@@ -19,7 +19,7 @@
       <div class="flex justify-between mb-8">
         <p>
           <i class="iconfont iconjiage mr-2"></i>
-          <span class="tracking-wider">价 格：</span>
+          <span>价&nbsp;&nbsp; 格：</span>
           <span class="font-medium text-red text-xl">￥{{ video.price }}</span>
         </p>
         <button
@@ -28,15 +28,15 @@
         >点击购买</button>
       </div>
       <div class="flex mb-8">
-        <p class="w-32 -mr-4">
+        <p class>
           <i class="iconfont iconyongtu mr-2"></i>
-          <span class="tracking-wider">用 途：</span>
+          <span class="mr-1">用 &nbsp;&nbsp;途：</span>
         </p>
         <p class="flex-grow">{{ video.purpose }}</p>
       </div>
       <p class="mb-12">
         <i class="iconfont iconchengjiaoliang mr-2"></i>
-        <span class="tracking-wide">成交量：</span>
+        <span>成交量：</span>
         {{ video.dealnum }}
       </p>
       <i class="iconfont icondot text-red"></i>

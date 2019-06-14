@@ -9,13 +9,13 @@
     </div>
     <div class="w-10/12 lg:w-9/12 flex-shrink flex flex-col justify-around text-gray-900 pl-4">
       <p class="mb-4">
+        <i class="iconfont iconjiage"></i>
         价 格：
         <span class="text-red text-2xl font-medium">￥{{ video.price }}</span>
       </p>
       <p>
-        <span>
-          <i class="iconfont iconyongtu"></i> 用途：
-        </span>
+        <i class="iconfont iconyongtu"></i>
+        用 途：
         {{ video.purpose }}
       </p>
     </div>
