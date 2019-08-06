@@ -4,8 +4,8 @@ import axios from 'axios';
 import router from './router'
 
 Vue.prototype.axios = axios;
-axios.defaults.baseURL = 'http://192.168.0.50:9005'
-
+// axios.defaults.baseURL = 'http://192.168.0.50:9005'
+axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? 'http://192.168.0.50:9005' : 'http://videorest.51mofo.com/videostore'
 Vue.config.productionTip = false
 
 Vue.directive('focus', {
@@ -17,6 +17,6 @@ Vue.directive('focus', {
 })
 
 new Vue({
-    router,
-    render: h => h(App)
+  router,
+  render: h => h(App)
 }).$mount('#app')
